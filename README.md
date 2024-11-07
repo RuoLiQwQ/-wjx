@@ -1,4 +1,4 @@
-## wjx-auto-fill
+## -wjx
 #### 有用的话请给个star。谢谢
 
 ### 简介
@@ -7,7 +7,8 @@
 
 ### 实现思路
 
-![alt](./img/image-20240217225704000.png)
+![1000016006](https://github.com/user-attachments/assets/d7c4e698-08e0-40ca-9c6c-56a24ece7287)
+
 
 #### 1.爬取问卷
 
@@ -20,7 +21,8 @@ driver.get(url)
 
 通过xpath获取每个题目，并通过get_attribute获取题目类型，根据不同的题目类型采取的填写方式不同，可以通过浏览器的开发者模式查看题目类型，现在可以可以实现单选、多选、单量表、矩阵量表、简答、选择、打分
 
-![alt](./img/image-20240217230803370.png)
+![1000016008](https://github.com/user-attachments/assets/c62cf589-10ce-4290-bd4c-edbf18962dec)
+
 
 ```python
 xpath = '//*[@id="div{}"]'.format(i)
